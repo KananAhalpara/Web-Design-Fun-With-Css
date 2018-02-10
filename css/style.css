@@ -1,0 +1,262 @@
+/*---------------------------------------- all ------------------------------------------- */
+*{
+	font-family: 'Montserrat', sans-serif; /* default fonts ... if not assigned */
+}
+
+/*---------------------------------------- linear gradient-diagonal in body ------------------------------------------- */
+body{
+	background: #6f56c9;     
+    background: -webkit-linear-gradient(left top, #6f56c9, #32e5df); /* Safari */
+    background: -o-linear-gradient(bottom right, #6f56c9, #32e5df); /* Opera */
+    background: -moz-linear-gradient(bottom right, #6f56c9, #32e5df); /* Firefox */
+    background: linear-gradient(to bottom right, #6f56c9, #32e5df); /* Normal */
+}
+
+/*---------------------------------------- box-shadow and border-radius in wrapper ------------------------------------------- */
+.wrapper{
+	box-shadow: 2px 2px 60px #4d407c;
+	border-radius: 5px;
+	width: 70%;
+	margin: 5em auto;
+	padding: 2em;
+	text-align: justify;
+	background-color: #fff;
+	
+}
+
+/*---------------------------------------- heading and paragraph ------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Hind Vadodara', sans-serif;
+	font-weight: 400;
+	letter-spacing: 8px;
+	line-height: 1.5em;
+}
+
+
+/* ------------- text-shadow -------------------*/
+h1{
+	text-shadow: 2px 2px #32e5df;
+	color: #6049af;
+	font-size: 2.5em;
+}
+/*------------------------------------------------*/
+
+
+h2{
+	font-size: 2em;
+	font-weight: 300;
+}
+
+h3{
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h4{
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+h5{
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+h6{
+	font-size: 1em;
+	font-weight: 300;
+}
+/* ------------- word-wrap -------------------*/
+p{
+	word-wrap: break-word;
+}
+/*------------------------------------------------*/
+
+p,a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+}
+
+
+/* ------------- Border Radius -------------------*/
+a{
+	text-decoration: none;
+	background-color: #6049af;
+	color: #fff;
+	padding: 1em;
+	width: 100px;
+	border:solid 4px #6049af;
+	border-radius: 50px;
+}
+/*------------------------------------------------*/
+
+a:hover , a:active {
+	text-decoration: none;
+	background-color: #fff;
+	color: #6049af;
+	padding: 1em;
+	width: 100px;
+	border:solid 4px #6049af;
+	border-radius: 50px;
+}
+
+.col{
+	padding: 1em;
+}
+
+/* ----------------- box-shadow -------------------*/
+.box-shadow{
+	box-shadow: 0px 0px 60px #e7e7e7;
+	border-radius: 5px;
+	margin: 40px;
+}
+
+
+/* ---------------- image-border -------------------*/
+.image-border{
+	border: 5px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../images/border.png) 40 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/border.png) 40 round; /* Opera 11-12.1 */
+    border-image: url(../images/border.png) 40 round;
+}
+
+/*-------------------------------- radial-gradient ------------------------------------------*/
+.raidal-gradient{
+	background: #6049af;
+	background: -webkit-radial-gradient(circle, #6049af, #32e5df, #35ff99); /* Safari */
+	background: -o-radial-gradient(circle, #6049af, #32e5df, #35ff99); /* Opera */
+	background: -moz-radial-gradient(circle, #6049af, #32e5df, #35ff99); /* Firefox */
+	background: radial-gradient(circle, #6049af, #32e5df, #35ff99);
+}
+
+/*----------------------- background-size and background-origin and border-image  ------------------------------*/
+.background-image{
+	background-size: contain;
+	background-origin: border-box;
+	border:1px solid #fff;
+	background-image: url("../images/image-1.jpeg");
+	background-position: center;
+	background-size: cover;
+	background-color: #aeaeae;
+	background-repeat: no-repeat;
+}
+
+/*----------------------------------------------- 2D transformtions --------------------------------------*/
+
+/*-------------- move/transform:translate method ---------------*/
+.move{
+	transform:translate(50px,50px); /* 50px top bottom .... 100px left right */
+}
+/*------------ rotate/transform:rotate method ---------------*/
+.rotate{
+	transform:rotate(90deg);
+}
+/*----------- scale/transform:scale -----------------*/
+.scale{
+	transform:scale(1,1.5);
+}
+/*----------- skewtransform:skewX/transform:skewY ------------------*/
+.skewx{
+	transform: skewX(20deg);
+}
+
+
+
+/*----------------------------------------------- 3D transformtions --------------------------------------*/
+/*------------ rotate/transform:rotate method ---------------*/
+.rotatex{
+	transform:rotateX(120deg);
+}
+/*------------ rotate/transform:rotate method ---------------*/
+.rotatey{
+	transform:rotateY(140deg);
+}
+
+
+
+
+/*---------------------------------------- transition --------------------------------------------------*/
+.size{
+	width:100px;
+	height:100px;
+}
+/*------------------ transition ------------------*/
+.transition{
+ 	transition:width 2s,height 2s;
+ 	transition-timing-function: ease;
+
+}
+.transition:hover{
+	width:200px;
+	height: 200px;
+}
+
+/*------------------- delay ----------------------*/
+.delay{
+	transition: height 4s;
+	transition-timing-function: ease;
+	transition-delay: 1s; 
+
+}
+.delay:hover{
+	height: 400px;
+}
+/*------------------- duration and property -------------------*/
+.duration-property{
+	transition-duration: 2s;
+	transition-timing-function: ease;
+	transition-property: height; 
+}
+.duration-property:hover{
+	height: 500px;
+}
+
+/*------------------------------------------ animation ----------------------------------------------------*/
+.animation{
+	background: #6f56c9;
+	animation-name: colorchange;
+    animation-duration: 2s;
+   	animation-iteration-count: infinite;
+   	animation-timing-function: ease;
+   	animation-delay: 0.5s;
+   	animation-direction: alternate;
+}
+
+@keyframes colorchange {
+    from {background-color: #6f56c9;}
+    to {background-color: #32e5df;}
+}
+
+.animation2{
+	border-radius: 20px;
+	background: #6f56c9;
+    animation-duration: 3s;
+   	animation-timing-function: ease-in-out;
+   	animation-direction: alternate;
+   	animation-iteration-count:2;
+}
+
+.animation2:hover{
+	animation-name: sizecolorchange;
+}
+
+@keyframes sizecolorchange {
+	0%{
+		background-color: #6f56c9;
+		height: 10px;
+	}
+	100%{
+		background-color: #32e5df;
+		height: 300px;
+	}
+}
+/*---------------------------------------- footer ------------------------------------------- */
+footer{
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+}
