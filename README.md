@@ -1,0 +1,2 @@
+# Web-Design-Fun-With-Css
+TRY:Borders (border-radius, box-shadow, border-image) Backgrounds (background-size, background-origin) Gradients (linear, radial) (Tip: Remember to always specify a back-up background!) Text Effects (text-shadow, word-wrap) 2D Transforms (move, rotate, scale, skew) 3D Transforms (rotateX, rotateY) Transitions (transition, delay, duration, property) Animations (@keyframes, animation)
